@@ -1,4 +1,6 @@
-<h1 align="center">![Logo](https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/logo500.png)</h1>
+<div align="center">
+  <img src="https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/logo500.png" alt="ButtonLabs Logo">
+</div>
 
 <h1 align="center">
   ButtonLab
