@@ -5,15 +5,15 @@ function App() {
 
   const [buttonData, setButtonData] = React.useState(
     {
-      color: "#fff",
-      fontSize: 50,
-      content: "Button",
-      fill: "#000",
-      width: 480,
-      height: 160,
-      borderRadius: 20,
-      borderColor: "#D7D7D7",
-      borderWidth: 7
+      color: "",
+      fontSize: "",
+      content: "",
+      fill: "",
+      width: "",
+      height: "",
+      borderRadius: "",
+      borderColor: "",
+      borderWidth: ""
     }
   )
 
@@ -53,16 +53,16 @@ function App() {
 
     <div className="preview">
       <div className="button" style={{
-        color: `${buttonData.color}`,
-        fontSize: `${buttonData.fontSize}px`,
-        backgroundColor : `${buttonData.fill}`,
-        width: `${buttonData.width}px`,
-        height: `${buttonData.height}px`,
-        border: `${buttonData.borderWidth}px solid ${buttonData.borderColor}`,
-        borderRadius: `${buttonData.borderRadius}px`
+        color: `${buttonData.color==="" ? "#fff" : buttonData.color}`,
+        fontSize: `${buttonData.fontSize==="" ? "50" : buttonData.fontSize}px`,
+        backgroundColor : `${buttonData.fill==="" ? "#000" : buttonData.fill}`,
+        width: `${buttonData.width==="" ? "480" : buttonData.width}px`,
+        height: `${buttonData.height==="" ? "160" : buttonData.height}px`,
+        border: `${buttonData.borderWidth==="" ? "7" : buttonData.borderWidth}px solid ${buttonData.borderColor==="" ? "#D7D7D7" : buttonData.borderColor}`,
+        borderRadius: `${buttonData.borderRadius==="" ? "20" : buttonData.borderRadius}px`,
       }}>
         <p style={{textAlign: "center"}}>
-          {buttonData.content}
+          {buttonData.content==="" ? "Button" : buttonData.content}
         </p>
       </div>
     </div>
@@ -77,8 +77,11 @@ function App() {
         <input value={buttonData.color} name="color" type="text" onChange={buttonHandler} placeholder="Color"/>
         <input value={buttonData.fill} name="fill" type="text" onChange={buttonHandler} placeholder="Fill Color"/>
         <input value={buttonData.fontSize} name="fontSize" type="number" onChange={buttonHandler} placeholder="Font Size"/>
+
+        <div>
         <input value={buttonData.width} name="width" type="number" onChange={buttonHandler} placeholder="Width"/>
         <input value={buttonData.height} name="height" type="number" onChange={buttonHandler} placeholder="Height"/>
+        </div>
 
         <h1>Border</h1>
         <input value={buttonData.borderColor} name="borderColor" type="text" onChange={buttonHandler} placeholder="Border Color"/>
