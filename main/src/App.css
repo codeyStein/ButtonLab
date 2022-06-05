@@ -1,0 +1,79 @@
+body {
+  font-family: 'Comfortaa', sans-serif;
+  background-color: #EBEBEB;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button p {
+  font-weight: 400;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.editor {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35%;
+  height: 100vh;
+  background-color: #fff;
+  border-left-color: #D7D7D7;
+  border-left-width: 10px;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 88vh;
+}
+
+.inputs div button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0.6rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+.inputs div button:first-child {
+  margin-right: 0.5rem;
+}
+
+.inputs div button:last-child {
+  margin-left: 0.5rem;
+}
+
+img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  opacity: 0.7;
+  transition: 250ms ease-in;
+}
+
+img:hover,img:focus {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1111px) {
+  .editor {
+    width: 23rem;
+  }
+}
+
