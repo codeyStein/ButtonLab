@@ -4,7 +4,7 @@
 
 ---
 ## Editor Screenshot
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/screenshot.png)
 
 
 ## About
@@ -18,9 +18,9 @@ ButtonLab is an simple online editor made with React, to make beautiful buttons.
 
 
 ## Usage/Examples
-![Example One - buy button](https://via.placeholder.com/250x100?text=App+Screenshot+Here)
-![Example Two - Read More button](https://via.placeholder.com/250x100?text=App+Screenshot+Here)
-![Example Two - Play Button](https://via.placeholder.com/250x100?text=App+Screenshot+Here)
+![Example One - buy button](https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/exampleone.png)
+![Example Two - Read More button](https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/exampletwo.png)
+![Example Two - Play Button](https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/examplethree.png)
 
 
 ## Coming Soon
