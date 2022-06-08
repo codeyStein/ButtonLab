@@ -1,4 +1,5 @@
 import React from "react"
+import Save from "./components/Save"
 
 function App() {
 
@@ -43,13 +44,14 @@ function App() {
   }
 
   function favourite() {
-    console.log(`Favourited ${buttonData.content}`)
+    console.log(`Appended ${buttonData.content} to Favourites`)
   }
 
 
   return (
     <div className="App">
     <img src="./logo.svg" alt="buttonLabs logo"/>
+    <Save />
 
     <div className="preview">
       <div className="button" style={{
