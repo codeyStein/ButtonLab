@@ -3,20 +3,85 @@ body {
   background-color: #EBEBEB;
 }
 
-.button {
+/* SCREENS */
+.editor {
   display: flex;
-  align-items: center;
   justify-content: center;
+  flex-wrap: wrap;  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 35%;
+  height: 90%;
+  background-color: #fff;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-radius: 1.5rem;
+  margin-right: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 88vh;
+  overflow: hidden;
+}
+
+.inputs div button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0.6rem;
+  width: 10rem;
+  height: 3rem;
+  transition: 250ms ease-out;
+}
+
+img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  opacity: 0.7;
+  transition: 250ms ease-in;
 }
 
 h1 {
   font-size: 2.5rem;
 }
 
+
+
+/* CUSTOM OVERFLOW */
+.editor::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.editor::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+.editor::-webkit-scrollbar-thumb {
+  background: #D7D7D7;
+}
+
+
+
+/* BUTTON */
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .button p {
   font-weight: 400;
 }
 
+
+
+/* INPUTS */
 .inputs {
   display: flex;
   align-items: center;
@@ -31,6 +96,7 @@ h1 {
   height: 3rem;
   border-radius: 0.3rem;
   border: 0.15rem solid #D7D7D7;
+  transition: 250ms ease-out;
 }
 
 .inputs div {
@@ -50,51 +116,24 @@ h1 {
   align-self: flex-end;
 }
 
-.editor {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 35%;
-  height: 100%;
-  background-color: #fff;
-  border-left-color: #D7D7D7;
-  border-left-width: 10px;
-  overflow: scroll;
+.inputs input:focus {
+  border: 0.35rem solid #00000080;
 }
 
 
-.preview {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 65%;
-  height: 88vh;
-  overflow: hidden;
-}
 
-.inputs div button {
-  background-color: #000;
-  color: #fff;
-  border: none;
-  border-radius: 0.6rem;
-  width: 10rem;
-  height: 3rem;
-}
-
-img {
-  margin-top: 1rem;
-  margin-left: 1rem;
-  opacity: 0.7;
-  transition: 250ms ease-in;
-}
-
+/* HOVER STATES */
 img:hover,img:focus {
   opacity: 1;
 }
 
+button:hover, button:focus {
+  opacity: 0.7;
+}
+
+
+
+/* MEDIA QUERIES */
 @media screen and (max-width: 1280px) {
   .editor {
     width: 44%;
@@ -114,8 +153,4 @@ img:hover,img:focus {
   .inputs div button {
     width: 6.5rem;
   }
-}
-
-@media screen and (max-height: 861px) {
-
 }
