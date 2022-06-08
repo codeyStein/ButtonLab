@@ -1,0 +1,121 @@
+body {
+  font-family: 'Comfortaa', sans-serif;
+  background-color: #EBEBEB;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+.button p {
+  font-weight: 400;
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  align-content: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.inputs input {
+  width: 25rem;
+  height: 3rem;
+  border-radius: 0.3rem;
+  border: 0.15rem solid #D7D7D7;
+}
+
+.inputs div {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  gap: 4.5rem;
+}
+.inputs div input {
+  width: 10rem;
+}
+
+.inputs div input:first-child {
+  align-self: flex-start;
+}
+.inputs div input:first-child {
+  align-self: flex-end;
+}
+
+.editor {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35%;
+  height: 100%;
+  background-color: #fff;
+  border-left-color: #D7D7D7;
+  border-left-width: 10px;
+  overflow: scroll;
+}
+
+
+.preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 65%;
+  height: 88vh;
+  overflow: hidden;
+}
+
+.inputs div button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0.6rem;
+  width: 10rem;
+  height: 3rem;
+}
+
+img {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  opacity: 0.7;
+  transition: 250ms ease-in;
+}
+
+img:hover,img:focus {
+  opacity: 1;
+}
+
+@media screen and (max-width: 1280px) {
+  .editor {
+    width: 44%;
+  }
+  .preview {
+    width: 56%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .inputs input {
+    width: 18rem;
+  }
+  .inputs div input {
+    width: 6.5rem;
+  }
+  .inputs div button {
+    width: 6.5rem;
+  }
+}
+
+@media screen and (max-height: 861px) {
+
+}
