@@ -1,7 +1,19 @@
 import React from "react"
-import Save from "./components/Save"
+import { ToastContainer, toast, Bounce, } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+
+  const save = () => toast.success("Feature in development, coming soon!", {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: false,
+    progress: undefined,
+    transition: Bounce
+  });
 
 
   const [buttonData, setButtonData] = React.useState(
@@ -43,15 +55,11 @@ function App() {
     `)
   }
 
-  function favourite() {
-    console.log(`Appended ${buttonData.content} to Favourites`)
-  }
-
 
   return (
     <div className="App">
     <img src="./logo.svg" alt="buttonLabs logo"/>
-    <Save />
+    <ToastContainer/>
 
     <div className="preview">
       <div className="button" style={{
@@ -93,7 +101,7 @@ function App() {
       <br />
         <div>
           <button onClick={copyCode}>Copy CSS</button>
-          <button onClick={favourite}>Favourite</button>
+          <button onClick={save}>Favourite</button>
         </div>
         
       </div>
