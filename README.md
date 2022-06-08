@@ -1,10 +1,10 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/logo500.png" alt="ButtonLabs Logo">
+  <img src="https://raw.githubusercontent.com/codeyStein/ButtonLab/public/logo500.png" alt="ButtonLabs Logo">
 </div>
 
 ---
 ## Editor Screenshot
-![App Screenshot](https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/screenshot.png)
+![App Screenshot](https://raw.githubusercontent.com/codeyStein/ButtonLab/public/screenshot.png)
 
 
 ## About
@@ -18,9 +18,9 @@ ButtonLab is an simple online editor made with React, to make beautiful buttons.
 
 
 ## Usage/Examples
-![Example One - buy button](https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/exampleone.png)
-![Example Two - Read More button](https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/exampletwo.png)
-![Example Two - Play Button](https://raw.githubusercontent.com/codeyStein/ButtonLab/main/main/public/examplethree.png)
+![Example One - buy button](https://raw.githubusercontent.com/codeyStein/ButtonLab/public/exampleone.png)
+![Example Two - Read More button](https://raw.githubusercontent.com/codeyStein/ButtonLab/public/exampletwo.png)
+![Example Two - Play Button](https://raw.githubusercontent.com/codeyStein/ButtonLab/public/examplethree.png)
 
 
 ## Coming Soon
